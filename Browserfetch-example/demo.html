@@ -1,10 +1,8 @@
 <html>
-
 <head>
     <title>vis demo</title>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
 </head>
-
 <body>
     <div id="mynetwork"></div>
     <script>
@@ -129,7 +127,6 @@
             },
         };
         let container = document.getElementById('mynetwork');
-
         fetch('/config.json').then(resp => resp.json()).then(json => {
             let data = {
                 nodes: json.nodes,
@@ -139,5 +136,4 @@
         });
     </script>
 </body>
-
 </html>
